@@ -1,4 +1,7 @@
 /*
+ * @file DecisionTree.cpp
+ * @author Anuraj Kanodia
+ * 
  * Decision Tree Learning with ID3 Algorithm.
  * 
  * DataSet used: http://archive.ics.uci.edu/ml/datasets/Adult 
