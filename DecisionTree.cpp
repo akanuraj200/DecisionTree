@@ -1,7 +1,5 @@
 /*
- * Decision Tree Learning with
- * ID3 Algorithm, Random forests and 
- * AdaBoosting.
+ * Decision Tree Learning with ID3 Algorithm.
  * 
  * DataSet used: http://archive.ics.uci.edu/ml/datasets/Adult 
  *
