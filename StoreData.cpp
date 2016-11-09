@@ -13,6 +13,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+struct node {
+	string splitAttributeName;
+	int splitAttributeIndex;
+	int numberOfChildren;
+	long positiveExamples;
+	long negativeExamples;
+	long totalExamples;
+	bool result;
+	vector<bool> examplesAvailable;
+	vector<pair<string,struct node*> > childNodes;
+};
+
 long noOfTrainingExamples = 32561;
 long noOfTestingExamples = 16281;
 int noOfAttributes = 14;
@@ -21,6 +33,7 @@ vector<string> attributeNames(noOfAttributes); // stores the name of the attribu
 vector<pair<vector<string>,bool> > trainingDataSet; // stores the training dataset.
 vector<pair<vector<string>,bool> > testingDataSet; // stores the testing data.
 vector<bool> attributesAvailable(noOfAttributes,true); // stores the availability of attributes for splitting.
+vector<node*> myForest; // random forest.
 
 // stores the attribute names in a global vector for convenience.
 void SetAttributeNames(vector<string> &v) {
